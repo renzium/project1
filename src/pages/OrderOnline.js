@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import './OrderOnline.css';
-import falafel from "../images/falafel.jpg";
-import bruschetta from '../images/bruschetta.webp'
-import hummus from '../images/hummus.jpeg'
-import lamb_kebabs from '../images/lamb-kebabs.jpeg'
-import moussaka from "../images/moussaka.jpeg"
-import chicken_souvlaki from '../images/chicken-souvlaki.jpeg'
-import seafood_paella from '../images/seafood-paella.jpeg'
-import baklava from '../images/baklava.jpeg'
-import tiramisu from '../images/tiramisu.jpeg' 
+import './OrderOnline.css'; 
 
 const OrderOnline = () => {
   const [cart, setCart] = useState([]);
@@ -39,7 +30,7 @@ const OrderOnline = () => {
       category: "starters",
       price: 8.99,
       description: "Toasted bread topped with tomatoes, garlic, and fresh basil.",
-      image: bruschetta,
+      image: "/images/bruschetta.jpg",
       popular: false
     },
     {
@@ -48,7 +39,7 @@ const OrderOnline = () => {
       category: "starters",
       price: 7.99,
       description: "Creamy chickpea dip served with warm pita bread and olive oil.",
-      image: hummus,
+      image: "/images/hummus.jpg",
       popular: false
     },
     {
@@ -57,7 +48,7 @@ const OrderOnline = () => {
       category: "starters",
       price: 9.99,
       description: "Crispy chickpea fritters served with tahini sauce and fresh vegetables.",
-      image: falafel,
+      image: "/images/falafel.jpg",
       popular: false
     },
 
@@ -77,7 +68,7 @@ const OrderOnline = () => {
       category: "main-courses",
       price: 22.99,
       description: "Tender lamb marinated in Mediterranean spices, grilled and served with rice.",
-      image: lamb_kebabs,
+      image: "/images/lamb-kebabs.jpg",
       popular: false
     },
     {
@@ -86,7 +77,7 @@ const OrderOnline = () => {
       category: "main-courses",
       price: 18.99,
       description: "Layers of eggplant, potatoes, and vegetables with creamy béchamel sauce.",
-      image: moussaka,
+      image: "/images/moussaka.jpg",
       popular: false
     },
     {
@@ -95,7 +86,7 @@ const OrderOnline = () => {
       category: "main-courses",
       price: 19.99,
       description: "Marinated chicken skewers grilled and served with pita bread and tzatziki.",
-      image: chicken_souvlaki,
+      image: "/images/chicken-souvlaki.jpg",
       popular: false
     },
     {
@@ -104,7 +95,7 @@ const OrderOnline = () => {
       category: "main-courses",
       price: 26.99,
       description: "Traditional Spanish rice dish with shrimp, mussels, and saffron.",
-      image: seafood_paella,
+      image: "/images/seafood-paella.jpg",
       popular: true
     },
 
@@ -124,7 +115,7 @@ const OrderOnline = () => {
       category: "desserts",
       price: 7.99,
       description: "Layers of phyllo dough filled with nuts and sweetened with honey.",
-      image: baklava,
+      image: "/images/baklava.jpg",
       popular: false
     },
     {
@@ -133,7 +124,7 @@ const OrderOnline = () => {
       category: "desserts",
       price: 8.99,
       description: "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream.",
-      image: tiramisu,
+      image: "/images/tiramisu.jpg",
       popular: false
     },
 
@@ -213,7 +204,11 @@ const OrderOnline = () => {
   return (
     <div className="order-online-page">
       {/* Hero Section */}
-      <section className="order-hero">
+      <section className="order-hero" style={{
+        background: `linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), url('/images/restaurant-hero.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container">
           <div className="order-hero-content">
             <h1>Order Online</h1>

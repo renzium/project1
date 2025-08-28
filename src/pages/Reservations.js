@@ -79,7 +79,11 @@ const Reservations = () => {
   return (
     <div className="reservations-page">
       {/* Hero Section */}
-      <section className="reservations-hero">
+      <section className="reservations-hero" style={{
+        background: `linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), url('/images/reservations-hero.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container">
           <div className="reservations-hero-content">
             <h1>Make a Reservation</h1>

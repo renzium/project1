@@ -1,9 +1,5 @@
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-              url('/images/restaurant-hero.jpg');
-  background-size: cover;
-  background-position: center;
   color: var(--white);
   text-align: center;
   padding: 120px 20px;
@@ -173,10 +169,6 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
-              url('/images/restaurant-cta.jpg');
-  background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   color: var(--white);
 }

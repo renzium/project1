@@ -1,11 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import lemon_dessert from '../images/lemon-dessert.jpg';
-import brushetta from '../images/bruschetta.webp';
-import greek_salad from '../images/greek-salad.jpg';
-import restaurant_1 from '../images/restaurant-1.jpg';
-import restaurant_2 from '../images/about-hero.jpg';
+
 
 const Home = () => {
   const specials = [
@@ -14,21 +10,21 @@ const Home = () => {
       name: "Greek Salad",
       price: "$12.99",
       description: "Fresh lettuce, tomatoes, cucumbers, olives, and feta cheese with our house dressing.",
-      image:greek_salad
+      image: "/images/greek-salad.jpg"
     },
     {
       id: 2,
       name: "Bruschetta",
       price: "$8.99",
       description: "Toasted bread topped with tomatoes, garlic, and fresh basil.",
-      image: brushetta
+      image: "/images/bruschetta.jpg"
     },
     {
       id: 3,
       name: "Lemon Dessert",
       price: "$6.99",
       description: "Homemade lemon cake with a sweet glaze and fresh berries.",
-      image:lemon_dessert
+      image: "/images/lemon-dessert.jpg"
     }
   ];
 
@@ -60,7 +56,11 @@ const Home = () => {
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/restaurant-hero.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="hero-content">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>
@@ -110,8 +110,8 @@ const Home = () => {
             </div>
             <div className="about-images">
               <div className="image-stack">
-                <img src={restaurant_1} alt="Restaurant interior" className="image-1" />
-                <img src={restaurant_2} alt="Chef cooking" className="image-2" />
+                        <img src="/images/restaurant-1.jpg" alt="Restaurant interior" className="image-1" />
+        <img src="/images/about-hero.jpg" alt="Chef cooking" className="image-2" />
               </div>
             </div>
           </div>
@@ -135,7 +135,11 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section cta-section">
+      <section className="section cta-section" style={{
+        background: `linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), url('/images/restaurant-cta.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container text-center">
           <h2>Ready to Experience Mediterranean Cuisine?</h2>
           <p className="mb-4">Join us for an unforgettable dining experience with authentic flavors and warm hospitality.</p>

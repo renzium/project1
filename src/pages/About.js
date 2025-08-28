@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import restaurant_exterior from '../images/restaurant-story.jpg';
+
 
 const About = () => {
   const teamMembers = [
@@ -50,7 +50,11 @@ const About = () => {
   return (
     <div className="about-page">
       {/* Hero Section */}
-      <section className="about-hero">
+      <section className="about-hero" style={{
+        background: `linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), url('/images/about-hero.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container">
           <div className="about-hero-content">
             <h1>Our Story</h1>
@@ -70,7 +74,7 @@ const About = () => {
               <p>Today, Little Lemon continues to serve the community with the same passion and dedication that inspired us to open our doors over a decade ago.</p>
             </div>
             <div className="story-image">
-              <img src={restaurant_exterior} alt="Little Lemon restaurant exterior" />
+              <img src="/images/restaurant-story.jpg" alt="Little Lemon restaurant exterior" />
             </div>
           </div>
         </div>
@@ -143,7 +147,11 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section cta-section">
+      <section className="section cta-section" style={{
+        background: `linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), url('/images/restaurant-cta.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container text-center">
           <h2>Experience Our Hospitality</h2>
           <p className="mb-4">Join us for an authentic Mediterranean dining experience that will transport you to the shores of the Mediterranean Sea.</p>

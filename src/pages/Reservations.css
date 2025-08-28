@@ -1,9 +1,5 @@
 /* Reservations Hero */
 .reservations-hero {
-  background: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), 
-              url('/images/reservations-hero.jpg');
-  background-size: cover;
-  background-position: center;
   color: var(--white);
   text-align: center;
   padding: 100px 20px;
@@ -174,10 +170,6 @@
 
 /* Success Message */
 .success-message {
-  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
-              url('/images/restaurant-cta.jpg');
-  background-size: cover;
-  background-position: center;
   color: var(--white);
   text-align: center;
   padding: 120px 20px;
@@ -199,10 +191,6 @@
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
-              url('/images/restaurant-cta.jpg');
-  background-size: cover;
-  background-position: center;
   color: var(--white);
 }
 

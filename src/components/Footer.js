@@ -1,17 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import github from '../images/github.png';
-import linkedin from '../images/linkedin.png';
-import x from '../images/x.png';
-import logo from '../images/logo-light.png';
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <img src={logo} alt="Little Lemon" className="footer-logo" />
+            <img src="/images/logo-light.jpg" alt="Little Lemon" className="footer-logo" />
             <p>Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
           </div>
           
@@ -48,9 +45,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Little Lemon Restaurant. All rights reserved.</p>
           <div className="social-links">
-            <a href="https://github.com/renzium/project1" aria-label="github"><img alt='github' height={16} width={16} src={github}/></a>
-            <a href="https://www.linkedin.com/in/lawrence-ughonu" aria-label="linkedin"><img alt='linkedin' height={16} width={16}  src={linkedin}/></a>
-            <a href="https://x.com/renzium1" aria-label="x"><img alt='x'  height={16} width={22} src={x} /></a>
+            <a href="https://github.com/renzium/project1" aria-label="github"><img alt='github' height={16} width={16} src="/images/github.png"/></a>
+            <a href="https://www.linkedin.com/in/lawrence-ughonu" aria-label="linkedin"><img alt='linkedin' height={16} width={16}  src="/images/linkedin.png"/></a>
+            <a href="https://x.com/renzium1" aria-label="x"><img alt='x'  height={16} width={22} src="/images/x.png" /></a>
           </div>
         </div>
       </div>

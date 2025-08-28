@@ -52,7 +52,11 @@ const Login = () => {
   return (
     <div className="login-page">
       {/* Hero Section */}
-      <section className="login-hero">
+      <section className="login-hero" style={{
+        background: `linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), url('/images/login-hero.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}>
         <div className="container">
           <div className="login-hero-content">
             <h1>{isLogin ? 'Welcome Back' : 'Join Us'}</h1>
