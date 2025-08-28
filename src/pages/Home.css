@@ -1,0 +1,261 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('/images/restaurant-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Specials Section */
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.special-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.special-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.special-card:hover img {
+  transform: scale(1.05);
+}
+
+.special-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.special-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.special-content p {
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.special-content .btn {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* About Section */
+.about-section {
+  background-color: var(--highlight-color);
+}
+
+.about-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.about-images {
+  position: relative;
+}
+
+.image-stack {
+  position: relative;
+  height: 400px;
+}
+
+.image-1,
+.image-2 {
+  position: absolute;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image-1 {
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.image-2 {
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: var(--white);
+}
+
+.testimonial-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.rating {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-comment {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-name {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
+              url('/images/restaurant-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--white);
+}
+
+.cta-section h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .specials-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .image-stack {
+    height: 300px;
+  }
+  
+  .image-1,
+  .image-2 {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+  
+  .image-stack {
+    height: 250px;
+  }
+}

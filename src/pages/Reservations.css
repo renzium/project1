@@ -1,0 +1,292 @@
+/* Reservations Hero */
+.reservations-hero {
+  background: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), 
+              url('/images/reservations-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.reservations-hero-content h1 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.reservations-hero-content p {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+/* Reservations Content */
+.reservations-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.reservation-form-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Form Styles */
+.reservation-form {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid var(--highlight-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Reservation Info */
+.reservation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+/* Hours List */
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hours-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--highlight-color);
+}
+
+.hours-item:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.time {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Contact Info */
+.contact-info p {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Policy List */
+.policy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.policy-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* Success Message */
+.success-message {
+  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
+              url('/images/restaurant-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 120px 20px;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.success-message h1 {
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.success-message p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
+              url('/images/restaurant-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.cta-section h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .reservations-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .reservation-info {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .reservations-hero {
+    padding: 80px 20px;
+  }
+  
+  .reservations-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .reservations-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .reservation-form {
+    padding: 1.5rem;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservations-hero {
+    padding: 60px 15px;
+  }
+  
+  .reservations-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .reservation-form {
+    padding: 1rem;
+  }
+  
+  .info-card {
+    padding: 1rem;
+  }
+  
+  .hours-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

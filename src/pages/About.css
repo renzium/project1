@@ -1,0 +1,218 @@
+/* About Hero */
+.about-hero {
+  background: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), 
+              url('/images/about-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.about-hero-content h1 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.about-hero-content p {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+/* Story Section */
+.story-content h2 {
+  margin-bottom: 1.5rem;
+}
+
+.story-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.story-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Team Section */
+.team-section {
+  background-color: var(--highlight-color);
+}
+
+.team-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-image {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.team-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--secondary-color);
+}
+
+.team-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.team-role {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.team-info p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+  background-color: var(--white);
+}
+
+.value-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  line-height: 1.6;
+}
+
+/* Restaurant Info Section */
+.restaurant-info-section {
+  background-color: var(--highlight-color);
+}
+
+.info-content h2 {
+  margin-bottom: 2rem;
+}
+
+.info-item {
+  margin-bottom: 2rem;
+}
+
+.info-item h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.info-item p {
+  line-height: 1.6;
+}
+
+.info-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
+              url('/images/restaurant-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.cta-section h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 80px 20px;
+  }
+  
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .story-image img,
+  .info-image img {
+    height: 300px;
+  }
+  
+  .team-image img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 60px 15px;
+  }
+  
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .story-image img,
+  .info-image img {
+    height: 250px;
+  }
+  
+  .team-image img {
+    width: 100px;
+    height: 100px;
+  }
+}

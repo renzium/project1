@@ -1,0 +1,285 @@
+/* Menu Hero */
+.menu-hero {
+  background: linear-gradient(rgba(73, 94, 87, 0.8), rgba(73, 94, 87, 0.8)), 
+              url('/images/menu-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.menu-hero-content h1 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.menu-hero-content p {
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+/* Category Filters */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.category-btn {
+  background: var(--white);
+  color: var(--primary-color);
+  border: 2px solid var(--highlight-color);
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background: var(--secondary-color);
+  color: var(--dark-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.menu-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card.popular {
+  border: 3px solid var(--secondary-color);
+}
+
+.popular-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.menu-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.menu-card:hover .menu-image img {
+  transform: scale(1.05);
+}
+
+.menu-content {
+  padding: 1.5rem;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu-header h3 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.price {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+.menu-content .btn {
+  width: 100%;
+}
+
+/* Special Offers */
+.special-offers-section {
+  background-color: var(--highlight-color);
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.offer-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+}
+
+.offer-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.offer-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.offer-badge {
+  background: var(--accent-color);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* No Items */
+.no-items {
+  text-align: center;
+  padding: 3rem;
+  color: var(--dark-color);
+}
+
+.no-items p {
+  font-size: 1.2rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(rgba(73, 94, 87, 0.9), rgba(73, 94, 87, 0.9)), 
+              url('/images/restaurant-cta.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+.cta-section h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-hero {
+    padding: 80px 20px;
+  }
+  
+  .menu-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .menu-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .category-filters {
+    gap: 0.5rem;
+  }
+  
+  .category-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-hero {
+    padding: 60px 15px;
+  }
+  
+  .menu-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .category-filters {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .menu-card {
+    margin: 0 1rem;
+  }
+}
